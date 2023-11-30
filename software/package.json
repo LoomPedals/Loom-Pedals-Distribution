@@ -1,0 +1,22 @@
+{
+  "name": "loom-pedals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=dev DEBUG=* node arduino-node-test.js"
+  },
+  "author": "Shanel (S)",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "ethernet": "^1.0.1",
+    "firebase": "^9.6.1",
+    "firmata-io": "^2.3.0",
+    "johnny-five": "^2.1.0",
+    "loom-pi": "^1.0.0",
+    "serialport": "^10.4.0",
+    "url-parse": "^1.5.10"
+  }
+}
