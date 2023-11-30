@@ -24,7 +24,7 @@ To run the communications on your machine, you must have Node.JS and NPM install
 3. Connect the Arduino relay box to USB.
 4. After all dependencies are installed, run the program using the command `node main.js`.
 
-(to do: merge these two lists)
+(to do: merge these two lists) [[https://github.com/LoomPedals/Loom-Pedals-Distribution/edit/main/README.md]]
 1. Clone repository.
 2. Obtain firebase-config.js file and place in /node directory.
 3. Open terminal and navigate to /node directory.
