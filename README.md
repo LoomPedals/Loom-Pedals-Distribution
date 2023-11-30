@@ -24,3 +24,18 @@ To run the communications on your machine, you must have Node.JS and NPM install
 3. Connect the Arduino relay box to USB.
 4. After all dependencies are installed, run the program using the command `node main.js`.
 
+(to do: merge these two lists)
+1. Clone repository.
+2. Obtain firebase-config.js file and place in /node directory.
+3. Open terminal and navigate to /node directory.
+4. Run npm install.
+If you don't already have AdaCAD installed, also install that.
+Run
+Switch your AdaCAD repository to the comms branch.
+Compile and run AdaCAD with ng serve.
+Open AdaCAD in your browser, open the side toolbar (">>" button) and navigate to the Settings tab.
+Click "Connect to Loom" and note the loom ID number that generates.
+Actually physically connect the loom to your computer with the USB cable.
+Open another terminal in the /node directory.
+Run node main.js ####, replacing #### with the ID number from Step 4.
+
