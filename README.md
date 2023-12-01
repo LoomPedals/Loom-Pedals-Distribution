@@ -1,12 +1,14 @@
 # Loom Pedals Distribution
+
+Last updated: `December 1, 2023`
  
 # `./software` - Driver software
 
 Code that runs driver software to maintain connections between the TC2, AdaCAD, and the Loom Pedals hardware. Currently, you can only use "virtual" pedals that are on-screen in AdaCAD. Physical pedals still need to get re-connected to the system.
 
 ## Public Files
-* `comm.js` - AdaCAD connection through Firebase cloud services
-* `dbnodes.js` - 
+* `comm.js` - AdaCAD connection through Firebase cloud services (Realtime Database)
+* `dbnodes.js` - helper classes to handle different RT database nodes
 * `main.js` - top-level main module
 * `pedals.js` - hardware control
 * `relay.js` - Arduino relay control
@@ -15,6 +17,7 @@ Code that runs driver software to maintain connections between the TC2, AdaCAD, 
 * `firebase-config.js` - API key and other Firebase configuration details.
 * `protocol.js` - loom-specific codes
 * `tc2.js` - loom-specific functions
+* `loom-config.js` - individual TC2 settings such as local network and number of modules
 
 # Installation and Set Up
 
