@@ -1,7 +1,7 @@
 const { Loom } = require('./tc2.js');
 const { Pedals } = require('./pedals.js');
 const { DBPipe } = require('./comm.js');
-const { this_TC2 } = require('../config.js');
+const { this_TC2 } = require('./loom-config.js');
 
 console.log(this_TC2);
 

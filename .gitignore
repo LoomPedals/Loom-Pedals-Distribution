@@ -99,7 +99,9 @@ web_modules/
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# project private files
 software/protocol.js
 software/tc2.js
 software/firebase-config.js
-config.js
+software/loom-config.js

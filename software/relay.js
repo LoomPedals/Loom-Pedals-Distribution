@@ -1,8 +1,9 @@
 /**
- * Based on an Arduino board connected to the loom relay. Must have the Firmata (FirmataStandard.ino)
- * firmware uploaded to the board. Default relay is on pin 6.
+ * Based on an Arduino board connected to the loom relay. 
+ * Must have the Firmata firmware uploaded to the board. https://github.com/firmata/arduino/tree/main/examples/StandardFirmata
+ * Default relay is on pin 8.
  * 
- * In lab, if you're using the QDuino mini with the bent out pins, the RGB LED on-board is also enabled.
+ * TO DO: smarter COM port connection, let the user specify a command-line var.
  */
 
 const { SerialPort } = require('serialport');
@@ -10,17 +11,12 @@ const { EventEmitter } = require('stream');
 const Firmata = require("firmata-io").Firmata;
 
 class PCRelay extends EventEmitter {
-    constructor(pin = 9, led = false) {
+    constructor(pin = 8) {
         super();
         const node = this;
 
         this.pin = pin;
         this.state = false;
-        this.ledPins;
-
-        if (led) {
-            this.ledPins = [10, 13, 11]; // rgb led pins on Qduino mini
-        }
 
         this.board;
 
@@ -62,7 +58,7 @@ class PCRelay extends EventEmitter {
         } else {
             board.digitalWrite(this.pin, board.LOW);
         }
-        console.log("PC_relay.js: relay ", this.state);
+        console.log("relay.js: relay ", this.state);
     }
 }
 

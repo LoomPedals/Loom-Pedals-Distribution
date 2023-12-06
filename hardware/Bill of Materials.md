@@ -1,0 +1,5 @@
+- Arduino Uno (list substitutes)
+- [SparkFun Beefcake Relay Control Kit (Ver. 2.0) - KIT-13815 - SparkFun Electronics](https://www.sparkfun.com/products/13815)
+- [CA-2184 Tensility International Corp | Cable Assemblies | DigiKey](https://www.digikey.ca/en/products/detail/tensility-international-corp/CA-2184/568575) - not sure if this is the right inner diameter (ID), but it's bigger than the usual ID you get with Arduino power jacks.
+- USB cable - connects computer to Arduino, whichever type is compatible with both devices
+- Hook up wire/jumper wires
